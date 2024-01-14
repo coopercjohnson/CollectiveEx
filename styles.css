@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END CSS RESET */
+
+/* VARIABLES */
+
+:root{
+    --header-font: 'Rubik Scribble', system-ui;
+    --nav-font: 'Bebas Neue', sans-serif;
+
+    --box-shadow: -6px 6px 10px var(--dk-red);
+    --box-shadow-sm: -4px 4px 6px var(--dk-red);
+
+    --white: #fff;
+    --black: #000000; 
+    --brown: #7A3B00;
+    --dk-red: #9E2B23;
+    --orange: #E57600;
+    --salmon: #FF9F6B;
+}
+
+/* END VARIABLES */
+
+body {
+    font-family: var(--nav-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+header {
+    font-family: var(--nav-font);
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px;
+} 
+
+h1{
+    font-family: var(--header-font);
+    font-weight: bold;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header, nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+h1 a{
+    text-decoration: none;
+    font-size: 6rem;
+    color: var(--orange);
+}
+
+nav ul{
+    display: flex;
+    justify-content:center;
+    /* background-color: darkred; */
+    padding: 30px;
+    font-size: 2rem;
+}
+
+nav a{
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin: 0 40px;
+    border-radius: 20px 20px;
+    background-color: var(--brown);
+    box-shadow: var(--box-shadow);
+}
+
+nav a:hover {
+    background-color: var(--salmon);
+    box-shadow: var(--box-shadow-sm);
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2{
+    width: 80%;
+    margin: 0 auto;
+    color: var(--dk-red);
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+.container h3{
+    font-family: var(--header-font);
+    font-size: 5rem;
+    color: var(--brown);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.container p{
+    font-size: 2rem;
+    color: var(--salmon);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+}
+
+.promo-video {
+    width: 100%;
+    height: 400px;
+    border: 3px dashed var(--orange);
+    padding: 3px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    
+}
+
+footer a{
+    color: var(--dk-red);
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+/* FORM STYLES */
+
+.form {
+    text-align: left;
+    width: 30%;
+    margin: 0 auto;
+    background-color: var(--black);
+    border-radius: 10px 10px;
+    border: 3px dashed var(--orange);
+}
+
+.form h1{
+    font-size: 3rem;
+    font-family: var(--nav-font);
+    text-align: center;
+    color: var(--salmon);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--salmon);
+    font-size: 1.5rem;
+}
+
+.form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form button {
+    background-color: darkred;
+    color: var(--black);
+    padding: 5px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px 10px;
+    background-color: var(--brown);
+    font-size: 2rem;
+    margin: 0 auto;
+    font-family: var(--nav-font);
+    font-weight: bold;
+    box-shadow: var(--box-shadow);
+}
+
+.form button:hover{
+    background-color: var(--salmon);
+    box-shadow: var(--box-shadow-sm);
+}
+
+.contact-form{
+    width:95%;
+}
+
+/* .merch h2{
+    
+} */
